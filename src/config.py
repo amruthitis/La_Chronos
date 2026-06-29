@@ -20,7 +20,7 @@ REDIS_PASSWORD = os.getenv("REDIS_PASSWORD", "")
 REDIS_SSL = _get_bool_env("REDIS_SSL", False)
 CACHE_TTL = int(os.getenv("CACHE_TTL", "86400"))
 
-FRONTEND_URL = os.getenv("FRONTEND_URL", "https://<my-vercel-domain>.vercel.app")
+FRONTEND_URL = os.getenv("FRONTEND_URL", "https://la-chronos.vercel.app")
 CORS_ALLOWED_ORIGINS = [
     origin.strip()
     for origin in os.getenv("CORS_ALLOWED_ORIGINS", f"http://localhost:5173,{FRONTEND_URL}").split(",")
